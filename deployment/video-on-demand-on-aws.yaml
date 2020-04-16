@@ -25,7 +25,7 @@ Parameters:
   FrameCapture:
     Description: If enabled, frame capture is added to the job submitted to MediaConvert
     Type: String
-    Default: No
+    Default: Yes
     AllowedValues:
       - Yes
       - No
@@ -33,7 +33,7 @@ Parameters:
   EnableMediaPackage:
     Description: If enabled, MediaPackage VOD will be included in the workflow
     Type: String
-    Default: No
+    Default: Yes
     AllowedValues:
       - Yes
       - No

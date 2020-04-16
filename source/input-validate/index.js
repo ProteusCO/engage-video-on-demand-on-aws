@@ -83,6 +83,7 @@ exports.handler = async (event) => {
             case 'Video':
                 // Updating config with source video and data
                 data.srcVideo = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
+                data.srcVideoVersion = event.Records[0].s3.object.versionId;
                 break;
 
             default:
