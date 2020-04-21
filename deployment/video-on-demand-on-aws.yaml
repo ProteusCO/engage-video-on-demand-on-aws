@@ -567,60 +567,6 @@ Resources:
       GroupId: !Sub "${AWS::StackName}-packaging-group3"
       PackagingConfigurations: "HLS,DASH,MSS,CMAF"
 
-  MediaPackageVod4:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group4"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
-  MediaPackageVod5:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group5"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
-  MediaPackageVod6:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group6"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
-  MediaPackageVod7:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group7"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
-  MediaPackageVod8:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group8"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
-  MediaPackageVod9:
-    Type: Custom::LoadLambda
-    Properties:
-      ServiceToken: !GetAtt CustomResource.Arn
-      Resource: "MediaPackageVod"
-      StackName: !Sub ${AWS::StackName}
-      GroupId: !Sub "${AWS::StackName}-packaging-group9"
-      PackagingConfigurations: "HLS,DASH,MSS,CMAF"
-
   CustomResource:
     Type: AWS::Lambda::Function
     Properties:
