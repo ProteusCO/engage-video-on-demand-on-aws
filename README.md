@@ -156,7 +156,7 @@ aws s3 mb s3://my-bucket-us-east-1
 Build the distributable:
 ```
 chmod +x ./build-s3-dist.sh
-./build-s3-dist.sh my-bucket video-on-demand-on-aws v5.0.0-custom
+./build-s3-dist.sh engage-release-video-on-demand video-on-demand-on-aws v5.0.0-custom
 ```
 
 > **Notes**: The _build-s3-dist_ script expects the bucket name as one of its parameters, and this value should not include the region suffix.
