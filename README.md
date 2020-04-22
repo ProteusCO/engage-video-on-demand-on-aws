@@ -157,6 +157,13 @@ Build the distributable:
 ```
 chmod +x ./build-s3-dist.sh
 ./build-s3-dist.sh engage-release-video-on-demand video-on-demand-on-aws v5.0.0-custom
+
+This might have an error when it tries to build "mediainfo".  You can probably ignore that, since we use a standard version of
+that python-based lambda.
+
+./aws s3 cp ./regional-s3-assets/ s3://engage-release-video-on-demand/video-on-demand-on-aws/v5.0.0-custom/ --recursive --acl
+ bucket-owner-full-control --acl authenticated-read
+
 ```
 
 > **Notes**: The _build-s3-dist_ script expects the bucket name as one of its parameters, and this value should not include the region suffix.
