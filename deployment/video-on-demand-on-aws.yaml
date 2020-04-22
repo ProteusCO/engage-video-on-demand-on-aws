@@ -492,7 +492,7 @@ Resources:
           -
             Effect: Allow
             Action:
-              - sqs:SendMessage
+              - sqs:*
             Principal:
                 AWS:
                   arn:aws:iam::341530370639:root
