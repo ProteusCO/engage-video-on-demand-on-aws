@@ -492,12 +492,11 @@ Resources:
           -
             Effect: Allow
             Action:
-              - sqs:*
+              - SQS:*
             Principal:
                 AWS:
                   arn:aws:iam::341530370639:root
-            Resource:
-              !Ref SnsTopic
+            Resource: !GetAtt 'SqsQueue.Arn'
           -
             Effect: Allow
             Action:
