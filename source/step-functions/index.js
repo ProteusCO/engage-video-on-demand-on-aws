@@ -59,7 +59,7 @@ exports.handler = async (event) => {
                 break;
 
             case event.hasOwnProperty('detail'):
-                // Publish workflow triggered by MediaConver CloudWatch event::
+                // Publish workflow triggered by MediaConvert CloudWatch event::
                 params = {
                     stateMachineArn: process.env.PublishWorkflow,
                     input: JSON.stringify(event),

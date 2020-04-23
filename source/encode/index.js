@@ -104,9 +104,9 @@ const getFrameGroup = (event, outputPath) => ({
             AntiAlias: 'ENABLED',
             CodecSettings: {
                 FrameCaptureSettings: {
-                    MaxCaptures: 10000000,
+                    MaxCaptures: 10,
                     Quality: 80,
-                    FramerateDenominator: 5,
+                    FramerateDenominator: 1,
                     FramerateNumerator: 1
                 },
                 Codec: 'FRAME_CAPTURE'
