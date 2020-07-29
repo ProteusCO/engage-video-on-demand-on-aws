@@ -32,7 +32,7 @@ const getHlsGroup = (outputPath) => ({
         Type: 'HLS_GROUP_SETTINGS',
         HlsGroupSettings: {
             SegmentLength: 5,
-            MinSegmentLength: 0,
+            MinSegmentLength: 1,
             Destination: `${outputPath}/hls/`
         }
     },
